@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image:url(../imgs/fundoLogin.jpg);
+    background-position: 40% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bunda{
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-top: 12%;
+    background-color: #FFFFFF;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.botao-login{
+    margin-top: 2%;
+    margin-left: 44%;
+    margin-bottom: 4%;
+    color: #FFFFFF;
+    background-color: #515E26;
+
+}
+
+.link-login{
+    margin-left: 34%;
+    margin-top: 8%;
+    color: #98a381;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-login a:hover{
+    color: #515E26;
+    text-decoration: none;
+}
+
