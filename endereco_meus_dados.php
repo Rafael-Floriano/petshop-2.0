@@ -37,31 +37,31 @@ $row = mysqli_fetch_assoc($resultado);
             <a style="text-decoration:none;" class="btn btn-primary" href="senha_meus_dados.php">Senha</a>
         </div>
         <div>
-            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_endereco" value="<?php echo $row['id_endereco']; ?>">
+            <input type="hidden" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="id_endereco" value="<?php echo $row['id_endereco']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Rua:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="rua" value="<?php echo $row['rua']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="rua" value="<?php echo $row['rua']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Bairro:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="bairro" value="<?php echo $row['bairro']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="bairro" value="<?php echo $row['bairro']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Cidade:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="cidade" value="<?php echo $row['cidade']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="cidade" value="<?php echo $row['cidade']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Número da residência:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="numero_casa" value="<?php echo $row['numero_casa']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="numero_casa" value="<?php echo $row['numero_casa']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Número da residência:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="uf" value="<?php echo $row['uf']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="uf" value="<?php echo $row['uf']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Número da residência:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="cep" value="<?php echo $row['cep']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="cep" value="<?php echo $row['cep']; ?>">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Salvar</button>

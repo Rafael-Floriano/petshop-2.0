@@ -42,15 +42,15 @@ $row = mysqli_fetch_assoc($resultado);
         unset($_SESSION['senha_errada']);
         ?>
         <div>
-            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_cliente" value="<?php echo $row['id_cliente']; ?>">
+            <input type="hidden" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="id_cliente" value="<?php echo $row['id_cliente']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Senha Atual:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="senha_atual">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="senha_atual">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nova senha:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="senha_nova">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="senha_nova">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Salvar</button>

@@ -30,19 +30,19 @@ $row = mysqli_fetch_assoc($resultado);
             <a style="text-decoration:none;" class="btn btn-primary" href="senha_meus_dados.php">Senha</a>
         </div>
         <div>
-            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id_cliente" value="<?php echo $row['id_cliente']; ?>">
+            <input type="hidden" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="id_cliente" value="<?php echo $row['id_cliente']; ?>">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Senha Atual:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nm_cliente" value="<?php echo $row['nm_cliente']; ?>">
+            <label for="exampleInputEmail1" class="form-label">Nome Completo:</label>
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="nm_cliente" value="<?php echo $row['nm_cliente']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email do cliente:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_cliente" value="<?php echo $row['email_cliente']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="email_cliente" value="<?php echo $row['email_cliente']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">CPF:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="cpf" disabled value="<?php echo$row['cpf']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="cpf" disabled value="<?php echo$row['cpf']; ?>">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Salvar</button>
