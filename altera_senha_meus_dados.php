@@ -20,9 +20,10 @@ if($row == 1){
 
     $resultado = mysqli_query($con,$sql);
 
+    header('location:./tela_sucesso/senha_sucesso.php');
+
 }else{
     $_SESSION['senha_errada'] = true;
     header('location:senha_meus_dados.php');
 }
 
-header('location:senha_meus_dados.php');
