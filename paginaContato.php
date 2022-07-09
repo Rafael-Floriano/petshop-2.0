@@ -1,5 +1,6 @@
 <?php
 
+include './verifica_usuario_novo.php';
 include 'cabecalho.php';
 
 ?>
@@ -7,7 +8,7 @@ include 'cabecalho.php';
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 
 <head>
     <meta charset="UTF-8">

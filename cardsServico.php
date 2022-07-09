@@ -3,6 +3,7 @@
 include './petshop-2.0/conexao.php';
 include 'cabecalho.php';
 
+
 if (isset($_POST['busca'])) {
     $pesquisa = $_POST['busca'];
 } else {

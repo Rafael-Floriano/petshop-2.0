@@ -13,7 +13,7 @@ session_start();
     <title>LoginPet</title>
 </head>
 
-<body class="img-fluid ">
+<body class="img-fluid">
     <form action="login.php" method="POST" class="bunda" style=margin-bottom:12%;>
         <?php
             if(isset($_SESSION['nao_autenticado'])):
