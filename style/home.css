@@ -1,0 +1,30 @@
+.img-patinha-position img {
+    width: 10%;
+    position: absolute;
+    margin: 9% auto auto 15%;
+}
+
+.imagem-background-serv-1 {
+    background-repeat: no-repeat;
+    background-size: 94% 92%;
+    background-position: 67%;
+}
+
+.imagem-background-serv-2 {
+ 
+    background-repeat: no-repeat;
+    background-size: 90% 93%;
+    background-position: 55%;
+}
+
+.imagem-background-serv-3 {
+   
+    background-repeat: no-repeat;
+    background-size: 94% 92%;
+    background-position: 60%;
+}
+
+.separacao-rodape{
+    justify-content: space-between;
+    margin: auto 5%;
+}
