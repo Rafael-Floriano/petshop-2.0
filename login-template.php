@@ -1,4 +1,5 @@
 <?php
+include './cabecalho.php';
 session_start(); 
 ?>
 
@@ -12,8 +13,8 @@ session_start();
     <title>LoginPet</title>
 </head>
 
-<body class="img-fluid">
-    <form action="login.php" method="POST" class="bunda">
+<body class="img-fluid ">
+    <form action="login.php" method="POST" class="bunda" style=margin-bottom:12%;>
         <?php
             if(isset($_SESSION['nao_autenticado'])):
         ?>
@@ -32,8 +33,10 @@ session_start();
             <label for="exampleInputPassword1">Senha:</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha do usuário" name="senha">
         </div>
-        <button type="submit" class="btn botao-login">Entrar</button><br>
+        <button type="submit" class="btn btn-success" style="margin-left:44%;">Entrar</button><br>
     </form>
 </body>
-
+<?php
+include './rodape.php';
+?>
 </html>

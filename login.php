@@ -19,10 +19,22 @@ if ($row == 1) {
     $_SESSION['usuario'] = $email;
     header('location:painelAdm.php');
     exit();
-    
-}else{
+}
+
+$sql = "SELECT id_cliente, email_cliente, senha_cliente FROM tb_cliente WHERE email_cliente = '$email' AND senha_cliente = '$senha'";
+
+$resultado = mysqli_query($con, $sql);
+
+$row = mysqli_num_rows($resultado);
+
+if($row == 1) {
+
+    $_SESSION['usuario'] = $email;
+    header('location:homeCliente.php');
+    exit();
+
+} else {
     $_SESSION['nao_autenticado'] = true;
     header('location:login-template.php');
     exit();
-    
 }

@@ -16,7 +16,7 @@
         <a href="./paginaContato.php" class=" text-white text-decoration-none mx-4">Contato</a>
       </div>
       <div class="me-5 my-auto">
-        <a href="./petshop-2.0/login-template.php" class=" text-white text-decoration-none">Login</a>
+        <a href="./login-template.php" class=" text-white text-decoration-none">Login</a>
       </div>
     </div>
   </nav>
