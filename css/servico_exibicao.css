@@ -13,7 +13,7 @@
 
 .cor{
     background-color: #ffffff;
-    margin: 4% 5% 0 5%;
+    margin: 4% 5% 10% 5%;
     border-radius: 10px;
 }
 
@@ -29,7 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 120px;
+    /* gap: 120px; */
 
 }
 
@@ -41,5 +41,11 @@
 }
 
 .descricao{
-    margin: 10% 20% 0 20%;
+    /* margin: 4% 20% 0 20%; */
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
