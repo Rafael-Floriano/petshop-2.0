@@ -30,7 +30,10 @@ include 'verifica_login.php';
                                 <a type="button" class="btn text-decoration-none" href="servico_pet_adm/tabelaServico.php">>Gerencie os Serviços</a>
                             </div>
                             <div>
-                                <a type="button" class="btn text-decoration-none" href="servico_pet_adm/servico_horario/tabelaHorario.php">>Gerencie os horarios</a>
+                                <a type="button" class="btn text-decoration-none" href="servico_pet_adm/servico_horario/tabelaHorario.php">>Gerencie os horários</a>
+                            </div>
+                            <div>
+                                <a type="button" class="btn text-decoration-none" href="servico_pet_adm/servico_confirmado/tabelaConfirmado.php">>Horários confirmados</a>
                             </div>
                             <div>
                                 <a type="button" class="btn text-decoration-none" href="logout.php">>Logout</a>
