@@ -43,7 +43,7 @@ $descricao = $row['descricao'];
         </div> -->
         <div class="tabela-servico" style="margin: 1% 6% 0 6%;">
             <?php
-            $sql = "SELECT agenda.Horario, agenda.Data_servico, agenda.fk_id_servico, ser.especies FROM tb_agenda_disponivel agenda
+            $sql = "SELECT agenda.id_agenda,agenda.Horario, agenda.Data_servico, agenda.fk_id_servico, ser.especies FROM tb_agenda_disponivel agenda
             INNER JOIN tb_servico ser ON agenda.fk_id_servico = ser.id_servico WHERE agenda.fk_id_servico = $id;";
             $resultado = mysqli_query($con, $sql);
             ?>
@@ -62,6 +62,7 @@ $descricao = $row['descricao'];
                     <?php
 
                     while ($row = mysqli_fetch_assoc($resultado)) {
+                        $id_agenda = $row['id_agenda'];
                         $fk_id_servico = $row['fk_id_servico'];
                         $Horario = $row['Horario'];
                         $Data_servico = $row['Data_servico'];
@@ -71,7 +72,7 @@ $descricao = $row['descricao'];
                         echo "<td style='text-align: center;'>$Horario</td>";
                         echo "<td style='text-align: center;'>$Data_servico</td>";
                         echo "<td style='text-align: center;'>$especie</td>";
-                        echo "<td style='text-align: center;'><a href='alteraServico.php?id=$fk_id_servico'>Agendar</a></td>";
+                        echo "<td style='text-align: center;'><a href='agenda_grava.php?id=$id_agenda'>Agendar</a></td>";
                         echo "</tr>";
                     }
                     ?>

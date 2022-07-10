@@ -16,7 +16,7 @@
     </div>
     <div class="me-5 my-auto d-flex" style="gap:20px; background-color:green;">
       <a href="./meus_dados.php" class=" text-white text-decoration-none">Meus dados</a>
-      <a href="./login-template.php" class=" text-white text-decoration-none">Meus serviços</a>
+      <a href="./meus_servicos.php" class=" text-white text-decoration-none">Meus serviços</a>
       <a href="./logout.php" class=" text-white text-decoration-none">Logout</a>
     </div>
   </div>

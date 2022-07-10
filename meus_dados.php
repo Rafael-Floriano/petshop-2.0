@@ -2,6 +2,7 @@
 
 include './verifica_login.php';
 $email = $_SESSION['usuario'];
+// $id = $_GET['id'];
 //  print_r($email);
 include './conexao.php';
 include './cabecalhoCliente.php';
