@@ -1,6 +1,5 @@
 <?php
 
-include './verifica_usuario_novo.php';
 include 'cabecalho.php';
 
 ?>

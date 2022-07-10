@@ -36,6 +36,7 @@ if (isset($_POST['busca'])) {
             $sequencia = 0;
 
             while ($row = mysqli_fetch_assoc($resultado)) {
+                $card_id = $row['id_servico'];
                 $card_titulo = $row['titulo'];
                 $card_descricao = $row['descricao'];
                 $card_preco_minimo = $row['preco_minimo'];
@@ -51,7 +52,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./paginaContato.php' class='btn btn-primary'>Nos contate</a>
+                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Nos contate</a>
                     </div>
                     </div>";
                 }elseif($sequencia!=3){
@@ -62,7 +63,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./paginaContato.php' class='btn btn-primary'>Nos contate</a>
+                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Nos contate</a>
                     </div>
                     </div>";
                 }elseif($sequencia == 3){
@@ -75,7 +76,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./paginaContato.php' class='btn btn-primary'>Nos contate</a>
+                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Nos contate</a>
                     </div>
                     </div>";
                     $sequencia = 0;

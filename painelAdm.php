@@ -30,6 +30,9 @@ include 'verifica_login.php';
                                 <a type="button" class="btn text-decoration-none" href="servico_pet_adm/tabelaServico.php">>Gerencie os Serviços</a>
                             </div>
                             <div>
+                                <a type="button" class="btn text-decoration-none" href="servico_pet_adm/servico_horario/tabelaHorario.php">>Gerencie os horarios</a>
+                            </div>
+                            <div>
                                 <a type="button" class="btn text-decoration-none" href="logout.php">>Logout</a>
                             </div>  
                         </div>
