@@ -49,11 +49,11 @@ $fk = $row['fk_id_servico'];
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Horário:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="horario" value="<?php echo $row['Horario'];?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="horario" value="<?php echo $row['Horario'];?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Data:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="data" placeholder="Ex: 19/10/2004" value="<?php echo $row['Data_servico'];?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="data" placeholder="Ex: 19/10/2004" value="<?php echo $row['Data_servico'];?>">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Enviar</button>

@@ -1,7 +1,7 @@
 <?php
 
 include './petshop-2.0/conexao.php';
-include 'cabecalho.php';
+// include 'cabecalho.php';
 
 
 if (isset($_POST['busca'])) {
@@ -25,7 +25,7 @@ if (isset($_POST['busca'])) {
 <body class="corpo">
     <div class="menu mb-5">
         <h1 class="titulo">Serviços PET</h1>
-        <form class="d-flex mb-3" action="./cardsServico.php" method="POST" style="width: 30%;">
+        <form class="d-flex mb-3" action="./cardsServicoAdm.php" method="POST" style="width: 30%;">
             <input class="form-control me-2" type="search" placeholder="Pesquisa Serviços" aria-label="Search" name="busca" autofocus>
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
         </form>
@@ -52,7 +52,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Agende!</a>
+                    <a href='#' class='btn btn-primary'>Agende!</a>
                     </div>
                     </div>";
                 }elseif($sequencia!=3){
@@ -63,7 +63,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Agende!</a>
+                    <a href='#' class='btn btn-primary'>Agende!</a>
                     </div>
                     </div>";
                 }elseif($sequencia == 3){
@@ -76,7 +76,7 @@ if (isset($_POST['busca'])) {
                     <p class='card-text'>$card_descricao</p>
                     <p class='card-text'>Nosso menor preço: <strong>R$ $card_preco_minimo</strong></p>
                     <p class='card-text'>Nosso maior preço: <strong>R$ $card_preco_maximo</strong></p>
-                    <a href='./servicos_exibicao.php?id=$card_id' class='btn btn-primary'>Agende!</a>
+                    <a href='#' class='btn btn-primary'>Agende!</a>
                     </div>
                     </div>";
                     $sequencia = 0;

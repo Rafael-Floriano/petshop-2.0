@@ -10,4 +10,6 @@ $sql = "INSERT INTO tb_adm(nm_adm, email_adm, senha_adm)
 VALUES ('$nome','$email','$senha')";
 $resultado = mysqli_query($con,$sql);
 
+header('location:painelAdm.php');
+
 ?>

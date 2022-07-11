@@ -32,11 +32,11 @@ $resultado = mysqli_query($con, $sql);
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Horário:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="horario">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="horario">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Data:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="data" placeholder="Ex: 19/10/2004">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="data" placeholder="Ex: 19/10/2004">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Enviar</button>

@@ -36,7 +36,7 @@ if (isset($_POST['busca'])) {
         </form>
         <div>
             <a style="text-decoration:none;" class="btn btn-primary mb-3" href="adicionaServico.php">Adicionar novo serviço</a>
-            <a style="text-decoration:none;" class="btn btn-danger mb-3" href="../cardsServico.php">Visualizar cards de serviço</a>
+            <a style="text-decoration:none;" class="btn btn-danger mb-3" href="../cardsServicoAdm.php">Visualizar cards de serviço</a>
             <a style="text-decoration:none;" class="btn btn-success mb-3" href="../painelAdm.php">Voltar</a>
         </div>
         <table class="table">

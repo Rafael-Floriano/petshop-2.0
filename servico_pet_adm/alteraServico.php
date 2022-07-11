@@ -28,23 +28,23 @@ $row = mysqli_fetch_assoc($resultado);
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nome do serviço:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nome" value="<?php echo $row['titulo']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="nome" value="<?php echo $row['titulo']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Preço máximo do serviço:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="preco_maximo" value="<?php echo $row['preco_maximo']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="preco_maximo" value="<?php echo $row['preco_maximo']; ?>">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Preço mínimo do serviço:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="preco_minimo" value="<?php echo$row['preco_minimo']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="preco_minimo" value="<?php echo$row['preco_minimo']; ?>">
         </div>
         <div class="form-floating">
             <label for="floatingTextarea2">Descrição:</label>
-            <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="descricao"> <?php echo $row['descricao']; ?> </textarea>
+            <textarea class="form-control" required id="floatingTextarea2" style="height: 100px" name="descricao"> <?php echo $row['descricao']; ?> </textarea>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Especie indicada para o serviço:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="especie" value="<?php echo $row['especies']; ?>">
+            <input type="text" class="form-control" required id="exampleInputEmail1" aria-describedby="emailHelp" name="especie" value="<?php echo $row['especies']; ?>">
         </div>
         <div>
             <button type="submit" class="btn botao-form">Enviar</button>

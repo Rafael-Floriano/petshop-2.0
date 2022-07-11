@@ -30,7 +30,7 @@ if (isset($_POST['busca'])) {
         <div class="mb-4">
             <h1 style="margin-left:40%;">Seção de Horários</h1>
         </div>
-        <form class="d-flex mb-3" action="./tabelaServico.php" method="POST">
+        <form class="d-flex mb-3" action="./tabelaHorario.php" method="POST">
             <input class="form-control me-2" type="search" placeholder="Pesquisa Serviços" aria-label="Search" name="busca" autofocus>
             <button class="btn btn-outline-success" type="submit">Pesquisar</button>
         </form>
